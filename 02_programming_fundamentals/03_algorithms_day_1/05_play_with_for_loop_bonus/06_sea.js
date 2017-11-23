@@ -12,3 +12,16 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~X~~~~~~~~~~~~~~~~~~~~~~~
 // ```
+// ma mer n'a pas de vague, est-ce un pb ? ;-)
+const array = [];
+const vertical = 9;
+const horizontal = 30;
+
+
+for (let i = 0; i < horizontal-1; i++) {
+  array.push("~");
+}
+
+for (let j = 0; j < vertical-1; j++) {
+  console.log(array.join(""));
+}

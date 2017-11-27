@@ -9,7 +9,22 @@
 */
 
 function fizzBuzz(list) {
-
+  const fizzBuzzedList = [];
+  for (let i = 0; i < list.length; i++) {
+    if (list[i]%15===0) {
+      fizzBuzzedList.push("FizzBuzz");
+    } else {
+      if (list[i]%3===0) {
+        fizzBuzzedList.push("Fizz");
+      } else {
+        if (list[i]%5===0){
+          fizzBuzzedList.push("Buzz");  
+        }
+      }
+    }
+    fizzBuzzedList.push(list[i]);
+  }
+  return fizzBuzzedList;
 }
 
 

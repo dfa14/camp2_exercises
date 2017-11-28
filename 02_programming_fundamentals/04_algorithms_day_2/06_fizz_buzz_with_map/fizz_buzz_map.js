@@ -9,9 +9,15 @@
    YOU MUST USE array.map
 */
 
-function fizzBuzz(list) {
 
+function fizzBuzz1(list) {
+  const arrayResult = list.map(function(x) {
+    if (x % 15 === 0){return "FizzBuzz";}
+    if (x % 3 === 0){return "Fizz";}
+    if (x % 5 === 0){return "Buzz";}
+    return x;
+  }); // fin du map
+  return arrayResult;
 }
-
 
 module.exports = fizzBuzz;

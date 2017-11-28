@@ -7,23 +7,19 @@
 // Note: This is not just the square of a number but the square of each digits
 // Note: The function accepts an integer and returns an integer
 
-function squareDigits(number) {
-  let stringNum=number.toString();
-  let tempArray = [];
+function squareDigits(paramNumber) {
+  let result = [];
+  let number = paramNumber;
 
-
-
-
-  for (let i = 0; i < stringNum.length; i++) {
-    tempArray.push[stringNum.charAt(i)];
+  while (number > 0) {
+    result.push(number%10 * number%10);
+    number = Math.floor(number/10);
   }
-  //console.log(tempArray);
-  //console.log(number);
-  //console.log(stringNum);
-  console.log(stringNum.charAt(2));
+  console.log();(result);
 }
 
-const toBeSquared = 43;
+const toBeSquared = 44;
+
 squareDigits(toBeSquared);
 
 // Do not remove last lines, it is for tests

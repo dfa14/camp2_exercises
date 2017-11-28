@@ -45,18 +45,14 @@ const MORSE_CODE = {
 };
 
 function decodeMorse(morse) {
-  let sentenceDecoded = [];
-  let morseSplited = morse.split("   ");
-  let wordSplited = [];
-  for (let i = 0; i < morseSplited.length; i++) {
-    wordSplited.push (morseSplited[i].split("/"));
+  let messageDecode = [];
+  let splitCode =morse.split("   ");
+  console.log(splitCode);
+  for (let i = 0; i < splitCode.length+1; i++) {
+    //splitCode[i]=MORSE_CODE[]
+    console.log(MORSE_CODE[splitCode[i]]);
   }
-  console.log(morse);
-  console.log(morseSplited);
-  console.log(wordSplited);
-
-
-  return sentenceDecoded;
+  //return resultat;
 }
 
 // Do not remove last lines, it is for tests

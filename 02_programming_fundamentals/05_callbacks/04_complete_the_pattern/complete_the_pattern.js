@@ -34,8 +34,27 @@
 // ```
 
 function pattern(size) {
-  // Your code here
+  let chaineAttendu =[];
+  let resultat;
+  for (let i = 1; i < size+1; i++) {
+    for (let j = 0; j < i; j++) {
+      chaineAttendu=chaineAttendu.concat(i);
+    }
+    chaineAttendu=chaineAttendu.concat("\n");
+
+    //console.log(chaineAttendu);
+    //j=j+1;
+  }
+  //console.log(chaineAttendu.trim());
+  resultat = chaineAttendu.join("");
+  return (resultat.trim());
 }
+
+/*
+var first_name = "peter";
+var last_name = "jones";
+var name=first_name.concat(last_name)
+*/
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line

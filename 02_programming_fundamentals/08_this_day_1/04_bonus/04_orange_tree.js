@@ -77,6 +77,9 @@ const orangeTree = {
     //console.log("je suis");
     //console.log(this.alive);
     this.willDieAt = Math.floor((Math.random()*49)+50);
+    // gérer la probabilité plus forte de manière logarithmique ci-dessou
+    // this.willDieAt = Math.trunc((2-(Math.log10(Math.random()*49+1))) * Math.random()*50)+50;
+
     console.log("je suis désolé de te le dire mais ton arbre mourra à");
     console.log(this.willDieAt);
 

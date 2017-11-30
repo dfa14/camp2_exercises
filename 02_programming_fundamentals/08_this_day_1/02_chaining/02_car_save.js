@@ -12,13 +12,11 @@ const car = {
 
   start: function() {
     //console.log("The engine will be On in 1sec ");
-    if (this.engine = "off") {
     this.speed = 0;
     this.timeDrive = 0;
     this.engine = "on";
     this.ditance =0;
     return car;
-  }
   },
 
   changeSpeed: function(speedTarget) {
@@ -28,13 +26,13 @@ const car = {
 
   drive: function(timeDrived) {
     this.timeDrive = this.timeDrive+timeDrived;
-    const temp = (this.speed * this.timeDrive)/60;
-    this.distance = this.distance + temp;
     return car;
   },
 
   showDistance: function() {
     //console.log("tu as conduit ");
+    const temp = (this.speed * this.timeDrive)/60;
+    this.distance = this.distance + temp;
     console.log(this.distance + "km");
     return this.distance;
   },

@@ -12,6 +12,7 @@ const person = {
   },
   introduceMyself: function() {
     // Your code here
+    return `Hello! I am ${this.firstname} ${this.lastname} and I am ${this.age}`;
   }
 }
 

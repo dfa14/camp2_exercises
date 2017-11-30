@@ -30,7 +30,6 @@ const orangeTree = {
     // death management
 
     if (this.age>=this.willDieAt) {
-      this.alive = false;
       return "sorry, your orangeTree is dead";
     }
     //console.log("voilà mon age");
@@ -79,7 +78,6 @@ const orangeTree = {
     this.willDieAt = Math.floor((Math.random()*49)+50);
     console.log("je suis désolé de te le dire mais ton arbre mourra à");
     console.log(this.willDieAt);
-
     //return nécessaire ?
   },
   //return nécessaire ?

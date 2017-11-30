@@ -7,8 +7,6 @@
 
 const arrayTemp = ["zero", "one", "two"];
 
-console.log(arrayTemp.reduce());
-
 function joinArray(array, stringSeparateur) {
   let stringFinal = "";
   for (let i = 0; i < array.length; i++) {

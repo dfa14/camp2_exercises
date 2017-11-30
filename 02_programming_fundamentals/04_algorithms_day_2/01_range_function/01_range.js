@@ -20,6 +20,7 @@ function range(param1, param2) {
   return (suite);
 }
 
+console.log(range(4,1));
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
 module.exports = range;

@@ -12,6 +12,22 @@
 
 // Your code here...
 
+const initArray = [1,2,3,4,5,6,7,8,12,14];
+
+function double(number) {
+  return number*2;
+}
+
+function map(array,fn) {
+  const arrayFinal = [];
+  for (let i = 0; i < array.length; i++) {
+    arrayFinal.push(fn(array[i]));
+  }
+  return arrayFinal;
+}
+
+console.log(map(initArray,double));
+
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
 module.exports = { double: double, map: map };

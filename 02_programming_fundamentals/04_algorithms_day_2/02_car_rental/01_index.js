@@ -11,21 +11,31 @@ const driver = {
 
 function canRentACar(driver) {
 
-  if ((driver.License==="B") && (driver.licenseIssued<=2015) && ((driver.numberOfAccident===0) || (driver.bonus>0.7))) {
+  if ((driver.driverLicense==="B") && (driver.licenseIssued<=2015) && ((driver.numberOfAccident===0) || (driver.bonus>0.7))) {
     return true;
   }
   else {
     return false;
   }
 
+
 }
-//
-// const driver = {
-//   driverLicense: "B",
-//   licenseIssued: 2014,
-//   numberOfAccident: 0,
-//   bonus: 0.8,
-// };
+
+const driver2 = {
+  driverLicense: "B",
+  licenseIssued: 2010,
+  numberOfAccident: 0,
+  bonus: 0.8,
+};
+
+// pour test uniquement à deleter si besoin
+
+console.log(driver2.driverLicense==="B");
+console.log(driver2.licenseIssued<=2015);
+console.log(driver2.numberOfAccident===0);
+console.log(driver2.bonus>0.7);
+console.log("Résultat");
+console.log(canRentACar(driver2));
 
 // ⚠ Do not remove me ! It's for tests
 // eslint-disable-next-line

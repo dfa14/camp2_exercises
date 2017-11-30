@@ -18,7 +18,7 @@ function fizzBuzz(list) {
         fizzBuzzedList.push("Fizz");
       } else {
         if (list[i]%5===0){
-          fizzBuzzedList.push("Buzz");  
+          fizzBuzzedList.push("Buzz");
         }
       }
     }
@@ -26,6 +26,7 @@ function fizzBuzz(list) {
   }
   return fizzBuzzedList;
 }
+
 
 
 module.exports = fizzBuzz;

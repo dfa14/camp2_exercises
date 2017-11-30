@@ -9,6 +9,7 @@
    YOU MUST USE array.map
 */
 
+const listTemp = [1,2,3,4,5,6,7,8,9,10,11];
 
 function fizzBuzz1(list) {
   const arrayResult = list.map(function(x) {
@@ -19,5 +20,6 @@ function fizzBuzz1(list) {
   }); // fin du map
   return arrayResult;
 }
+
 
 module.exports = fizzBuzz;

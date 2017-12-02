@@ -45,19 +45,25 @@ const MORSE_CODE = {
 };
 
 function decodeMorse(morse) {
-  let sentenceDecoded = [];
-  let morseSplited = morse.split("   ");
-  let wordSplited = [];
-  for (let i = 0; i < morseSplited.length; i++) {
-    wordSplited.push (morseSplited[i].split("/"));
+  let sentenceDecoded="";
+  let sentenceDecoded2="";
+  let sentenceDecodedFinal="";
+
+  sentenceDecoded = morse.split("   "); // isolation des mots
+
+  for (let j = 0; j < sentenceDecoded.length; j++) { // boucle pour gestion mot par mot
+    sentenceDecoded2 = sentenceDecoded[j].split(" ");
+    for (let i = 0; i < sentenceDecoded2.length; i++) { // boucle gestion lettre par lettre
+      sentenceDecodedFinal = sentenceDecodedFinal + MORSE_CODE[sentenceDecoded2[i]];
+    }
+    if (j !== sentenceDecoded.length-1) {
+      sentenceDecodedFinal = sentenceDecodedFinal + " ";
+    }
   }
-  console.log(morse);
-  console.log(morseSplited);
-  console.log(wordSplited);
-
-
-  return sentenceDecoded;
+  console.log(sentenceDecodedFinal);
+  return sentenceDecodedFinal;
 }
+decodeMorse(".... . -.--   .--- ..- -.. .");
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line

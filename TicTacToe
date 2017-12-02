@@ -1,0 +1,66 @@
+// Tic Tac Toe
+//-------------------------
+//------ les bases--------
+//-------------------------
+
+// grille de 3 (-> A voir si paramétrable ????)
+// comment faire ?
+//  >>>>>>>>>>> A PRIORI LE PLUS PERTINENT <<<<<<1 array que l'on JOIN avec des | pour séparer et visualiser
+//          OU
+// 3 array lignes
+//          OU
+// 1 objet comportant 3 key distincte = 3 array
+let arrayOne = ["-","-","-"];
+let arrayTwo = ["-","-","-"];
+let arrayThree = ["-","-","-"];
+console.log(arrayOne.join("|"));
+console.log(arrayTwo.join("|"));
+console.log(arrayThree.join("|"));
+
+//---------------------------
+//--- mode de fonctionnement
+//---------------------------
+
+//-- 2 joueurs (-> voir si un mode solo contre pc -> en aléatoire ???)
+//-- RANDOM du joueur qui commence
+
+//-- FUNCTION input coordonnées que tu veux jouer---
+// et PUSH dans la case concernée
+
+// FUNCTION de check sur la case n'a pas été déjà choisi
+// -----> ou ne proposer (en fonction du mode de fonctionnement) que les cases dispo
+
+//--FUNCTIONsss de validation de 3 alignés (vertical, horizontal, diagonal)
+//---  Tu as une checkColumn -> quel test ?
+//---  Tu as une checkLine -> quel test ?
+//---  tu as une checkDiagonal -> quel test ?
+
+// FUNCTION de visualisation de la grille -> résultat
+
+// FUNCTION countPartie pour gérer plusieurs rounds
+
+
+//-------------------------
+// questions résiduelles
+//-------------------------
+
+Grid / state / affichage
+
+//-------Grid-------
+let arrayOne = ["   ","   ","   "];
+let arrayTwo = ["   ","   ","   "];
+let arrayThree = ["   ","   ","   "];
+
+
+
+//-------State-------
+
+
+
+
+//-------Affichage-------
+let line =["____________"];
+letLineAffichageHorizonal = [" 1 ";" 2 ";" 3 "];
+
+console.log(letLineAffichageHorizonal.join("") + "\n"+ line.join("") + "\n" + arrayOne.join("|") + "\n"+ line.join("") + "\n"+ arrayTwo.join("|")+ "\n"+ line.join("") + "\n"+arrayThree.join("|")+"\n"+ line.join("") + "\n");
+console.log("\n"+ line.join("") + "\n");

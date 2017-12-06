@@ -13,9 +13,9 @@ module.exports = greet; */
 // test à réaliser
 // input -> toto -- output -> Hello TOTO!
 
+const greet = require("./greeting.js");
 
 test("Return Hello + name + !", () => {
-  expect(result).toBe(true);
-  expect(result).toBe(1);
-  expect(result).toBe("something");
+  expect(greet()).toBe("Hello WORLD!");
+  expect(greet("dom")).toBe("Hello DOM!");
 });

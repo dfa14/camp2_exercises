@@ -23,8 +23,6 @@ function weatherByCity (town) {
 }
 
 
-//temp = weatherByCity("Bogota");
-//console.log(temp);
-
+weatherByCity("Bogota");
 
 module.exports = weatherByCity

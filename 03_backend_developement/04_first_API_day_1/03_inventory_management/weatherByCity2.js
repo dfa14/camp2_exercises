@@ -13,7 +13,11 @@ function weatherByCity (town) {
   }, function(error, response, result) {
     const json = JSON.parse(result);
     //console.log(json.city.name);
+<<<<<<< HEAD
     console.log(json);
+=======
+    console.log(json.name);
+>>>>>>> Commit exercice jeudi 7 décembre
     //console.log(json.main.temp);
     //return (`${json.main.temp} °C`);
   });

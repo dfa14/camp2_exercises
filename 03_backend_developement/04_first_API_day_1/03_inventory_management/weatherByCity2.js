@@ -13,7 +13,7 @@ function weatherByCity (town) {
   }, function(error, response, result) {
     const json = JSON.parse(result);
     //console.log(json.city.name);
-    console.log(json.name);
+    console.log(json);
     //console.log(json.main.temp);
     //return (`${json.main.temp} °C`);
   });

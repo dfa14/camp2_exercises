@@ -5,6 +5,7 @@ const API_KEY = process.env.OPENWEATHER_API_KEY;
 //const town = "Bogota";
 const country= "CO";
 //console.log(API_KEY);
+const temp="";
 
 function weatherByCity (town) {
   request({
@@ -13,14 +14,17 @@ function weatherByCity (town) {
   }, function(error, response, result) {
     const json = JSON.parse(result);
     //console.log(json.city.name);
-    console.log(json);
+    //console.log(json);
     console.log(json.name);
-    //console.log(json.main.temp);
-    //return (`${json.main.temp} °C`);
+    console.log(json.main.temp);
+    console.log(`${json.main.temp} °C`);
+    return (`${json.main.temp} °C`);
   });
 }
 
 
-weatherByCity("Bogota");
+//temp = weatherByCity("Bogota");
+//console.log(temp);
+
 
 module.exports = weatherByCity

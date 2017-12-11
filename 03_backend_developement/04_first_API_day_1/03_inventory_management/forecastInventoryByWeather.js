@@ -1,23 +1,50 @@
+const request = require("request");
 
-const request = require ("request");
-const weatherByCity2 = require("./weatherByCity2")
-const API_KEY = process.env.GOOGLE_API_KEY;
-const stores = [
-  "Decat Bordeaux Ste Catherine (Decathlon), 130 Rue Sainte-Catherine, 33000 Bordeaux",
-  "Decathlon Marseille Bonneveine, Chemin du Roi d'Espagne, 13009 Marseille",
-  "Decathlon Strasbourg Geispolsheim, 5 Rue du Fort, 67118 Geispolsheim",
-  "Decathlon Wagram Paris, 26 Avenue de Wagram, 75008 Paris",
-  "Decathlon Lorient, Rue Colonel le Barillec, 56100 Lorient",
-  "Decathlon, 4 Boulevard de Mons, 59650 Villeneuve-d'Ascq"
-];
-const arrayOfCity = [];
-// utiliser Weatherbycity pour avoir le temps de chaque commune
-//donc il faut mapper le string pour avoir la commune
+const API_KEY = process.env.OPENWEATHER_API_KEY;
 
-for (let i = 0; i < stores.length; i++) {
-  const arrayTemp =stores[i].split(" ");
-  arrayOfCity.push(arrayTemp[arrayTemp.length - 1]);
+function weatherByLatitudeAndLongitude(latitude, longitude, callback) {
+  fetchForecastsByLatitudeAndLongitude(latitude, longitude, function(json) {
+    callback(json.list.map(reformatForecast));
+  });
 }
-console.log(arrayOfCity);
-console.log(arrayOfCity[0]);
-weatherByCity(arrayOfCity[0]);
+
+function fetchForecastsByLatitudeAndLongitude(latitude, longitude, callback) {
+  request(
+    {
+      url: `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&APPID=${API_KEY}`,
+      method: "GET"
+    },
+    function(error, response, result) {
+      const json = JSON.parse(result);
+
+      callback(json);
+    }
+  );
+}
+
+function reformatForecast(forecast) {
+  return {
+    date: timestampToDate(forecast.dt),
+    temperature: forecast.main.temp,
+    weather: {
+      id: forecast.weather[0].id,
+      main: forecast.weather[0].main,
+      description: forecast.weather[0].description
+    }
+  };
+}
+
+function timestampToDate(timestamp) {
+  const date = new Date(timestamp * 1000);
+
+  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+}
+
+weatherByLatitudeAndLongitude(35, 139, function(forecasts) {
+  console.log(forecasts);
+});
+
+module.exports = {
+  reformatForecast: reformatForecast,
+  weatherByLatitudeAndLongitude: weatherByLatitudeAndLongitude
+};

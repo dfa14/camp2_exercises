@@ -12,35 +12,6 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~X~~~~~~~~~~~~~~~~~~~~~~~
 // ```
-<<<<<<< HEAD
-//
-
-
-
-const arrayTemp = [];
-const hauteur = 9;
-const longueur = 30;
-let ligne ="";
-
-//intégration dans l'array
-//for (let i = 1; i < hauteur; i++) {
-for (let i = 0; i < hauteur; i++) {
-  ligne="";
-  for (let j = 1; j < longueur; j++) {
-    if (((j === 25) && (i === 2)) || ((j === 9) && (i === 7))) {
-      ligne = ligne + "X";
-    } else if ((((j === 4) && (i === 6)) || ((j === 18) && (i === 7)))) {
-      ligne = ligne + "0";
-    } else {
-      ligne = ligne + "~";
-    }
-
-  }
-  console.log(ligne);
-}
-//console.log(arrayTemp[i]);
-//}
-=======
 // ma mer n'a pas de vague, est-ce un pb ? ;-)
 const array = [];
 const vertical = 9;
@@ -54,4 +25,3 @@ for (let i = 0; i < horizontal-1; i++) {
 for (let j = 0; j < vertical-1; j++) {
   console.log(array.join(""));
 }
->>>>>>> exercice du soir bonsoir

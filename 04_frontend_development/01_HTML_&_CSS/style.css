@@ -1,0 +1,55 @@
+p
+{
+	font-family: impact,"ArialBlack", Arial;
+	/*background-attachment: fixed; /* Le fond restera fixe */
+
+}
+
+/* Instruction : Utiliser une police personnalisée via @font-face*/
+@font-face {
+    font-family: 'ambleregular';
+    src: url('web_fonts/amble_regular_macroman/Amble-Regular-webfont.eot');
+    src: url('web_fonts/amble_regular_macroman/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('web_fonts/amble_regular_macroman/Amble-Regular-webfont.woff') format('woff'),
+         url('web_fonts/amble_regular_macroman/Amble-Regular-webfont.ttf') format('truetype'),
+         url('web_fonts/amble_regular_macroman/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.imageflottante
+{
+    float: right;
+	border: 5px solid black; /*Instruction : Définir une bordure à un élément */
+	border-radius: 10px;
+	box-shadow: 6px 6px 0px grey; /* Instruction : Définir une ombre à un élément*/
+}
+
+/* Instruction : Appliquer une image de fond à la page*/
+body
+{
+    background-image: url("images/bureau.jpeg");
+    /*background-attachment: fixed; /* Le fond restera fixe */
+}
+
+/* Instruction : Utilisation de la nouvelle police définie dans via le @font-face*/
+*
+{
+    font-family: 'ambleregular', Arial, serif;
+}
+
+/* Instruction : Changer l'alignement d'un des textes*/
+h1, p
+{
+	text-align : center;
+}
+p
+{
+	text-align : left;
+}
+/* Instruction : Changer la couleur d'un des textes*/
+h2
+{
+	color :#742525 ;
+}

@@ -21,6 +21,7 @@ function pickEvenNumbers(param) {
   }
 }
 
+<<<<<<< HEAD
 for (let i = 0; i < initArray.length; i++) {
   arrayFinal.push(pickEvenNumbers(initArray[i]));
 }
@@ -29,6 +30,12 @@ filter(initArray, pickEvenNumbers);
 
 // il passe l'array à filtrer et la fonction pickEvenNumbers
 
+=======
+
+function pickEvenNumbers() {
+  
+}
+>>>>>>> test commit du lundi matin
 // do not remove this line, it is for tests
 module.exports = filter;
 

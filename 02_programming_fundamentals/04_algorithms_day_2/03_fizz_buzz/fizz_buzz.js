@@ -18,7 +18,11 @@ function fizzBuzz(list) {
         fizzBuzzedList.push("Fizz");
       } else {
         if (list[i]%5===0){
+<<<<<<< HEAD
           fizzBuzzedList.push("Buzz");
+=======
+          fizzBuzzedList.push("Buzz");  
+>>>>>>> test commit du lundi matin
         }
       }
     }

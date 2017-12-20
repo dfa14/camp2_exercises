@@ -11,13 +11,25 @@ const driver = {
 
 function canRentACar(driver) {
 
+<<<<<<< HEAD
   if ((driver.driverLicense==="B") && (driver.licenseIssued<=2015) && ((driver.numberOfAccident===0) || (driver.bonus>0.7))) {
+=======
+  if ((driver.License==="B") && (driver.licenseIssued<=2015) && ((driver.numberOfAccident===0) || (driver.bonus>0.7))) {
+>>>>>>> test commit du lundi matin
     return true;
   }
   else {
     return false;
   }
 
+}
+//
+// const driver = {
+//   driverLicense: "B",
+//   licenseIssued: 2014,
+//   numberOfAccident: 0,
+//   bonus: 0.8,
+// };
 
 }
 

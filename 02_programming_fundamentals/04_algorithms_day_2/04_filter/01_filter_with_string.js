@@ -1,7 +1,11 @@
 // filter takes an array of integer and a string with either odd or even
 // such as filter([1, 2, 3, 4, 5], 'even') returns [2, 4]
 const param = [1, 2, 3, 4, 5];
+<<<<<<< HEAD
 const pairOuImpair = "even";
+=======
+const pairOuImpair = "odd";
+>>>>>>> test commit du lundi matin
 // odd = impair // even = pair
 
 function filter(tempArray, str) {
@@ -17,12 +21,20 @@ function filter(tempArray, str) {
       }
     }
   }
+<<<<<<< HEAD
   console.log(listFiltered);
   return listFiltered;
 
 }
 
 filter(param,pairOuImpair);
+=======
+
+  return listFiltered;
+}
+
+filter(param);
+>>>>>>> test commit du lundi matin
 
 // do not remove this line, it is for tests
 module.exports = filter;

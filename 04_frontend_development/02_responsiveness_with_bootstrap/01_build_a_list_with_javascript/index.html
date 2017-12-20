@@ -19,6 +19,8 @@
           <h1>List of french departments</h1>
 
           <ul id="department-list" class="list-group">
+
+
             <!-- Your list will end up here -->
           </ul>
 
@@ -29,6 +31,10 @@
     <script>
       // Your code here
       // the departments are accessible in a global variable named DEPARTMENTS
+      for (let i = 0; i < DEPARTMENTS.length; i++) {
+        document.getElementById("department-list").innerHTML += "<li>"+DEPARTMENTS[i]+"</li>";
+      }
+
     </script>
   </body>
 </html>

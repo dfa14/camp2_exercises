@@ -12,8 +12,6 @@ fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}
   //.then ((result) => result.geometry)
   .then (function(result) {
     console.log(result);
-    const mavariablep1 = result.lat;
-    const mavariablep2 = result.lng;
     return result;
   })
   .then (function(result) {
@@ -23,7 +21,7 @@ fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}
         console.log("Input :" + query);
         console.log("Les coordonnées sont associées à la ville de " + result.city.name);
         console.log("Voici le temps prévu by OpenWeather.com à " + result.list[0].dt_txt);
-        console.log(new Date(result.list[0].dt_txt));
+        console.log(result.list[0].dt_txt);
         return result.list[0];
       })
       .then (function(result) {

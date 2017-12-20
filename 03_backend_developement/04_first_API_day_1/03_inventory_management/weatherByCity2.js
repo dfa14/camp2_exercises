@@ -16,8 +16,8 @@ function weatherByCity (town) {
 <<<<<<< HEAD
     console.log(json);
 =======
-    console.log(json.name);
->>>>>>> Commit exercice jeudi 7 décembre
+    console.log(json);
+>>>>>>> Commit du lundi matin 11/12
     //console.log(json.main.temp);
     //return (`${json.main.temp} °C`);
   });

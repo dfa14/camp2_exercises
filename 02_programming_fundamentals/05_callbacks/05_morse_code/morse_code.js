@@ -45,6 +45,7 @@ const MORSE_CODE = {
 };
 
 function decodeMorse(morse) {
+<<<<<<< HEAD
   let sentenceDecoded="";
   let sentenceDecoded2="";
   let sentenceDecodedFinal="";
@@ -62,6 +63,20 @@ function decodeMorse(morse) {
   }
   console.log(sentenceDecodedFinal);
   return sentenceDecodedFinal;
+=======
+  let sentenceDecoded = [];
+  let morseSplited = morse.split("   ");
+  let wordSplited = [];
+  for (let i = 0; i < morseSplited.length; i++) {
+    wordSplited.push (morseSplited[i].split("/"));
+  }
+  console.log(morse);
+  console.log(morseSplited);
+  console.log(wordSplited);
+
+
+  return sentenceDecoded;
+>>>>>>>  commit du matin
 }
 decodeMorse(".... . -.--   .--- ..- -.. .");
 

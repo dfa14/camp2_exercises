@@ -5,6 +5,7 @@ const initArray = [1,2,3,4,5]
 
 function filter(initArray, fn) {
   // Your code here
+<<<<<<< HEAD
   //const arrayTemp = [];
   let arrayFinal = [];
   for (let i = 0; i < initArray.length; i++) {
@@ -19,6 +20,9 @@ function pickEvenNumbers(param) {
   if (param%2 === 0) {
     return param;
   }
+=======
+  
+>>>>>>>  commit du matin
 }
 
 <<<<<<< HEAD
@@ -33,7 +37,7 @@ filter(initArray, pickEvenNumbers);
 =======
 
 function pickEvenNumbers() {
-  
+
 }
 >>>>>>> test commit du lundi matin
 // do not remove this line, it is for tests

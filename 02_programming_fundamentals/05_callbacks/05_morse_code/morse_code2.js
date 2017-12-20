@@ -44,7 +44,20 @@ const MORSE_CODE = {
   "----.": "9"
 };
 
+<<<<<<< HEAD
 
+=======
+function decodeMorse(morse) {
+  let messageDecode = [];
+  let splitCode =morse.split("   ");
+  console.log(splitCode);
+  for (let i = 0; i < splitCode.length+1; i++) {
+    //splitCode[i]=MORSE_CODE[]
+    console.log(MORSE_CODE[splitCode[i]]);
+  }
+  //return resultat;
+}
+>>>>>>>  commit du matin
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line

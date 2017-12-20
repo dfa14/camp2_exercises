@@ -45,6 +45,7 @@ const MORSE_CODE = {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 function decodeMorse(morse) {
@@ -58,6 +59,9 @@ function decodeMorse(morse) {
   //return resultat;
 }
 >>>>>>>  commit du matin
+=======
+
+>>>>>>> commit intermediaire demandé
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line

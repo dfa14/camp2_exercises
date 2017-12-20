@@ -9,7 +9,10 @@
    YOU MUST USE array.map
 */
 
+<<<<<<< HEAD
 const listTemp = [1,2,3,4,5,6,7,8,9,10,11];
+=======
+>>>>>>> commit intermediaire demandé
 
 function fizzBuzz1(list) {
   const arrayResult = list.map(function(x) {
@@ -20,6 +23,5 @@ function fizzBuzz1(list) {
   }); // fin du map
   return arrayResult;
 }
-
 
 module.exports = fizzBuzz;

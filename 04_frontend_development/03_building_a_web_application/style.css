@@ -1,0 +1,16 @@
+@import "/Users/Dominique/Workspace/camp2_exercises/node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: (
+  primary: purple,
+  secondary: red,
+  success: green,
+  info: cyan,
+  warning: yellow,
+  danger: red,
+  light: #ccc,
+  dark: #999
+);
+
+.navdf {
+  background-color: tomato;
+}

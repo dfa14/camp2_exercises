@@ -2,18 +2,24 @@
   body
   {
     background-image: url("./img/Charizard.png");
+    background-repeat: no-repeat;
+
   }
 }
 @media (min-width: 512px) {
   body
   {
-    background-image: url("./img/Charmander.png")
+    background-image: url("./img/Charmander.png");
+    background-repeat: no-repeat;
+
   }
 }
 
 @media (min-width: 1024px) {
   body
   {
-    background-image: url("./img/Charmeleon.png")
+    background-image: url("./img/Charmeleon.png");
+    background-repeat: no-repeat;
+
   }
 }

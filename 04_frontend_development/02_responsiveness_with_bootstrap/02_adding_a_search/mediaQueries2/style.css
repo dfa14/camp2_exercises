@@ -1,0 +1,22 @@
+#contenair
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.element {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+.element:nth-child(2n+1) {
+  background-color: grey;
+
+}
+
+.element:nth-child(2n) {
+  background-color: tomato;
+}

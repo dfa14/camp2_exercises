@@ -1,0 +1,8 @@
+#conteneur
+{
+  display: flex;
+  justify-content : space-around;
+  flex-wrap : wrap ;
+  background-color: grey;
+  /*border : 2px solid #4444*/
+}

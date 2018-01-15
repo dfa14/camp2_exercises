@@ -1,0 +1,24 @@
+
+.Table {
+  text-align: center;
+}
+
+.Table-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.Table-title {
+  font-size: 1.5em;
+}
+
+.Table-intro {
+  font-size: large;
+}
+
+.Table-click {
+  font-size: 1.5em;
+  color:white;
+}
